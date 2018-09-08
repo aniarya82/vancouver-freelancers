@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display:700');
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold 700;
+}
+main {
+  margin: 1rem;
+}
+.leaflet-container {
+  height: 75vh;
+  width: 100%;
+}
