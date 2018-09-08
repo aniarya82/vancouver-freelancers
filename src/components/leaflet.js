@@ -51,16 +51,17 @@ export default class CustomComponent extends Component {
   handleLocationFound = e => {
     this.setState({
       hasLocation: true,
-      latlng: e.latlng,
+      latlng: e.latlng
     })
   }
 
   //Start finding user location
   componentDidMount = () => {
-    this.mapRef.current.leafletElement.locate()
+    this.mapRef.current.leafletElement.locate();
   }
 
   render() {
+
     const markers = [
       { key: '1', position: [49.25857, -123.10102], title:'Starbucks - Main Street', description: 'A really nice and fresh Starbucks with great WiFi seating. A popular hangout for locals and freelancers.' },
       { key: '2', position: [49.26641, -123.09944], title:'Cartems Donuts', description: 'Pretty quiet and spacious cafe with donuts (!) and nice tea\'s. Not the fastest WiFi but good for some casual work.' },
@@ -71,6 +72,8 @@ export default class CustomComponent extends Component {
       { key: '7', position: [49.2840743,-123.1152215], title:'Cartems Donuts', description: 'Another Cartems for when you are working in Gastown. Small venue but just as spacious as the venue on Main Street.' },
     ]
 
+    const totalMarkers = markers.length;
+    
     const marker = this.state.hasLocation ? (
       <CircleMarker center={this.state.latlng} color="red" radius={20}>
         <Popup>
@@ -81,22 +84,25 @@ export default class CustomComponent extends Component {
 
     if (typeof window !== 'undefined') {
       return (
-        <Map 
-          animate={this.state.animate}
-          center={this.state.latlng}
-          zoom={this.state.zoom}
-          length={4}
-          onClick={this.handleClick}
-          onLocationfound={this.handleLocationFound}
-          ref={this.mapRef}
-        >
-          <TileLayer
-            attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <MyMarkersList markers={markers} />
-          {marker}
-        </Map>
+        <div>
+          <Map 
+            animate={this.state.animate}
+            center={this.state.latlng}
+            zoom={this.state.zoom}
+            length={4}
+            //onClick={this.handleClick}
+            onLocationfound={this.handleLocationFound}
+            ref={this.mapRef}
+          >
+            <TileLayer
+              attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <MyMarkersList markers={markers} />
+            {marker}
+          </Map>
+          <p style={{textAlign: 'center'}}>Total venues: {totalMarkers} / 100</p>
+        </div>
       )
     }
     return null

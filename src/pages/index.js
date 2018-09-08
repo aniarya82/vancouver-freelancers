@@ -1,11 +1,29 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import MainMap from '../components/leaflet'
-import styled, { css } from 'emotion'
+import { css } from 'emotion'
 
 const lead = css`
-max-width:960px;
-margin: 1rem auto;
+  max-width: 960px;
+  margin: 1rem auto;
+`
+
+const btn = css`
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  padding-bottom: calc(.375em - 1px);
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  display: inline;
+  a {
+    text-decoration: none;
+  }
+
 `
 
 const IndexPage = () => (
@@ -14,6 +32,7 @@ const IndexPage = () => (
     <MainMap /> 
 
     <div className={lead}>
+    <hr style={{backgroundColor:' #f5f5f5', border: 'none', display: 'block', height: '2px'}} />
       <p>
         Vancouver Freelancers is a list of the top 100 freelancer cafes, workspaces, and coworking spaces in Vancouver.
       </p>
@@ -23,9 +42,10 @@ const IndexPage = () => (
       <p>
         Bitters meggings bicycle rights, af 8-bit vinyl cray stumptown fashion axe art party schlitz semiotics ramps before they sold out. Shabby chic drinking vinegar tote bag flexitarian, la croix blog dreamcatcher farm-to-table hoodie pop-up kogi etsy. Cliche dreamcatcher taxidermy chartreuse listicle pug schlitz tousled whatever blue bottle bespoke neutra normcore. Live-edge blog kitsch whatever meditation migas tofu palo santo, snackwave fam forage distillery. Organic yr retro neutra scenester tbh cloud bread direct trade raclette celiac craft beer. Ramps cold-pressed sriracha hell of vaporware celiac pug biodiesel irony keytar brooklyn brunch banjo shabby chic craft beer.
       </p>
-      <button>
-        <Link to="/page-2/">Go to page 2</Link>
+      <button className={btn}>
+        <Link to="/about/">Go to page 2</Link>
       </button>
+      {/* COUNTER HERE */}
     </div>
 
   </div>

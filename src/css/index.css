@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display:700');
-html, body {
+* {
+  box-sizing: border-box;
+}
+body {
   font-family: 'Lato', sans-serif;
+  color: #4a4a4a;
+  font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-family: 'Playfair Display', serif;
@@ -11,6 +20,6 @@ main {
   margin: 1rem;
 }
 .leaflet-container {
-  height: 75vh;
+  height: 65vh;
   width: 100%;
 }

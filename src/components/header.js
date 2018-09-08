@@ -13,6 +13,7 @@ const mainTitle = css`
   max-width: 960px;
   font-weight: bold;
   font-size: 2rem;
+  display: inline;
   a {
     color: white;
     text-decoration: none;
@@ -24,20 +25,41 @@ const mainTitle = css`
   }
 `
 
+const menu = css`
+list-style: none;
+float: right;
+color: #fff;
+`
+
+const menuItem = css`
+  display: inline-block;
+  margin-right: 1rem;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+`
+
+const LinkItem = props => (
+  <li className={menuItem}>
+    <Link to={props.to}>
+      {props.children}
+    </Link>
+  </li>
+)
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: 'rebeccapurple'
-    }}
-  >
+  <header style={{background: 'rebeccapurple'}}>
     <div className={header}>
       <h1 className={mainTitle}>
-        <Link
-          to="/"
-        >
+        <Link to="/" >
           {siteTitle}
         </Link>
       </h1>
+      <ul className={menu}>
+        <LinkItem to="/about/">About</LinkItem>
+        <LinkItem to="/contact/">Suggest</LinkItem>
+      </ul>
     </div>
   </header>
 )
