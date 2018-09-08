@@ -39,11 +39,8 @@ const IndexPage = () => (
       <p>
         Lorem ipsum dolor amet post-ironic air plant irony photo booth schlitz forage craft beer scenester tbh meditation chillwave poutine bitters put a bird on it. Umami coloring book pinterest chartreuse butcher glossier tumblr ugh. Lo-fi DIY marfa ennui. Photo booth ethical DIY taxidermy cloud bread jianbing.
       </p>
-      <p>
-        Bitters meggings bicycle rights, af 8-bit vinyl cray stumptown fashion axe art party schlitz semiotics ramps before they sold out. Shabby chic drinking vinegar tote bag flexitarian, la croix blog dreamcatcher farm-to-table hoodie pop-up kogi etsy. Cliche dreamcatcher taxidermy chartreuse listicle pug schlitz tousled whatever blue bottle bespoke neutra normcore. Live-edge blog kitsch whatever meditation migas tofu palo santo, snackwave fam forage distillery. Organic yr retro neutra scenester tbh cloud bread direct trade raclette celiac craft beer. Ramps cold-pressed sriracha hell of vaporware celiac pug biodiesel irony keytar brooklyn brunch banjo shabby chic craft beer.
-      </p>
       <button className={btn}>
-        <Link to="/about/">Go to page 2</Link>
+        <Link to="/about/">Learn More</Link>
       </button>
       {/* COUNTER HERE */}
     </div>

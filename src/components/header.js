@@ -29,6 +29,11 @@ const menu = css`
 list-style: none;
 float: right;
 color: #fff;
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 480px) {
+		float: none;  
+  }
 `
 
 const menuItem = css`
@@ -58,7 +63,7 @@ const Header = ({ siteTitle }) => (
       </h1>
       <ul className={menu}>
         <LinkItem to="/about/">About</LinkItem>
-        <LinkItem to="/contact/">Suggest</LinkItem>
+        <LinkItem to="/suggest/">Suggest</LinkItem>
       </ul>
     </div>
   </header>
