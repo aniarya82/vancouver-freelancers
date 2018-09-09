@@ -7,6 +7,6 @@ module.exports = {
   plugins: [
   	'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
-    'gatsby-plugin-react-leaflet',
+    'gatsby-plugin-react-leaflet'
   	],
 }

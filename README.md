@@ -6,7 +6,10 @@ Built on React, Gatsby, Emotion, and React Leaflet. Hosting with Surge.
 
 ## To Do
 
-* Add more location data
-* Add a page per venue that can be bulk generated and linked to from the main map
-* Fix form styling
-* Ensure forms are React friendly
+* [x] Fix map attribution
+* [ ] Add more location data
+* [ ] Add a page per venue that can be bulk generated and linked to from the main map
+* [x] Fix form styling
+* [ ] Ensure forms are React friendly
+* [ ] Optimize the Mapbox title API call
+* [ ] Pull more location data from the Foursquare API

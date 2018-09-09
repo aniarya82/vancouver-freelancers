@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const PageTwo = () => (
     <div>
-        <h1>☕ vancouver freelancers</h1>
+        <h1>Hey there 👋</h1>
         <p>
             Vancouver Freelancers is a list of the top 100 freelancer cafes, workspaces, and coworking spaces in Vancouver.
         </p>
