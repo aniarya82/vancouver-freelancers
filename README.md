@@ -4,7 +4,7 @@ Just a fun idea to have a map app that shows some good freelancer workspaces in 
 
 Built on React, Gatsby, Emotion, and React Leaflet. Hosting with Surge.
 
-## To Do
+## todo
 
 * [x] Fix map attribution
 * [ ] Add more location data
@@ -13,3 +13,8 @@ Built on React, Gatsby, Emotion, and React Leaflet. Hosting with Surge.
 * [ ] Ensure forms are React friendly
 * [ ] Optimize the Mapbox title API call
 * [ ] Pull more location data from the Foursquare API
+* [ ] CSS Sticky Footer
+
+## build
+
+`surge public\ --domain https://feeble-eggnog.surge.sh/`

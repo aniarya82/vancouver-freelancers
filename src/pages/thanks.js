@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Thanks = () => (
-    <div>
+    <section>
         <h1>Thanks ☕</h1>
         <p>
             Thanks for the suggestion. We will be in-touch.
         </p>
-    </div>
+    </section>
 )
 
 export default Thanks

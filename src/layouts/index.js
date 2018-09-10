@@ -1,11 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { css } from 'react-emotion'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
 import '../css/index.css'
 import '../css/normalize.css'
+
+const footerSet = css`
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+`
 
 const Layout = ({ children, data }) => (
   <div>
@@ -19,7 +27,9 @@ const Layout = ({ children, data }) => (
     <main>
       {children()}
     </main>
-    <Footer />
+
+   {/*<div className={footerSet}><Footer /></div>*/
+  }
   </div>
 )
 

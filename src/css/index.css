@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
 
 h1 {
@@ -9,11 +10,17 @@ h1 {
   font-weight: bold 700;
 }
 
+.leaflet-container {
+  height: 65vh;
+  width: 100%;
+}
+
 main {
   margin: 1rem;
 }
 
-.leaflet-container {
-  height: 65vh;
-  width: 100%;
+section {
+  margin: 0 auto;
+  max-width: 50rem;
+  text-align: center;
 }

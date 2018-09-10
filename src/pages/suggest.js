@@ -4,6 +4,7 @@ import { css } from 'react-emotion'
 
 const formGroup = css`
 width: 250px;
+margin: 0 auto;
 `
 
 const textArea = css`
@@ -98,7 +99,7 @@ vertical-align: top;
 `
 
 const Suggest = () => (
-    <div>
+    <section>
         <h1>Want to suggest a new venue?</h1>
         <p>
             Just fill in the form below and we will take a look ☕ 
@@ -113,7 +114,7 @@ const Suggest = () => (
             <button type="submit" className={btnSubmit}>Send</button>
         </form>
         </div>
-    </div>
+    </section>
 )
 
 export default Suggest
