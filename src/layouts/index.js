@@ -28,8 +28,8 @@ const Layout = ({ children, data }) => (
       {children()}
     </main>
 
-   {/*<div className={footerSet}><Footer /></div>*/
-  }
+   <div className="footer"><Footer /></div>
+
   </div>
 )
 

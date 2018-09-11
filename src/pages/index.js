@@ -38,7 +38,7 @@ const IndexPage = () => (
 
     <MainMap /> 
 
-    <section className={intro}>
+    <section className={intro} style={{textAlign: 'center'}}>
       <h1 className={jumboHeading}>vancouver freelancers</h1>
         <p>
           Vancouver Freelancers is a list of the top 100 freelancer cafes, workspaces, and coworking spaces in Vancouver.
