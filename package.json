@@ -24,6 +24,10 @@
     "react-helmet": "^5.2.0",
     "react-leaflet": "^2.0.1"
   },
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": "^1.2.1"
+  },
   "keywords": [
     "gatsby"
   ],
