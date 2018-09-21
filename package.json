@@ -1,7 +1,7 @@
 {
   "name": "vancouver-freelancers",
   "description": "Vancouver Freelancers is a list of the top 100 freelancer cafes, workspaces, and coworking spaces in Vancouver. Built on the Gatsby starter pack.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Daniel Reed <danieel.reed@gmail.com>",
   "dependencies": {
     "axios": "^0.18.0",
