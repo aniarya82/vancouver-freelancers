@@ -55,7 +55,7 @@ for (let i = 0; i < markers.length; i++) {
 const totalMarkers = markers.length;
 
 const styleH3 = {
-  margin: 0;
+  margin: '0',
   fontFamily: 'sans-serif',
   fontWeight: '400',
   borderBottom: '1px solid #e8e8e8',
@@ -66,7 +66,7 @@ const styleH3 = {
 
 const textStyle = {
   fontSize: '0.9rem',
-  margin: 0;
+  margin: '0',
   padding: '0 15px',
   marginBottom: '15px',
   color: '#333',
