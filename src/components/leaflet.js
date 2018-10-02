@@ -54,10 +54,34 @@ for (let i = 0; i < markers.length; i++) {
 
 const totalMarkers = markers.length;
 
+const styleH3 = {
+  margin: 0;
+  fontFamily: 'sans-serif',
+  fontWeight: '400',
+  borderBottom: '1px solid #e8e8e8',
+  padding: '10px 15px 7px',
+  fontSize: '1.3rem',
+  marginBottom: '10px'
+}
+
+const textStyle = {
+  fontSize: '0.9rem',
+  margin: 0;
+  padding: '0 15px',
+  marginBottom: '15px',
+  color: '#333',
+}
+
 //Popup Template
 const ThePopUp = ({ title, description, position, rating, url }) => (
   <Marker position={position}>
-    <Popup><h3 style={{fontSize: '1.3rem', fontFamily: 'Playfair Display', marginBottom: '0'}}><a href={url} target="_blank">{title}</a></h3><p style={{fontSize: '0.9rem', fontFamily: 'Lato', marginBottom: '0.5rem'}}>{description}</p><p style={{fontSize: '0.9rem', fontFamily: 'Lato', marginBottom: '0.5rem'}}>{rating}/10</p> </Popup>
+    <Popup>
+      <h3 style={styleH3}>
+        <a href={url} target="_blank">{title}</a>
+      </h3>
+      <p style={textStyle}>{description}</p>
+      {rating && <p style={{ ...textStyle, color: '#545454', fontSize: '13px'}}>Rating: {rating}/10</p> }
+      </Popup>
   </Marker>
 )
 
