@@ -23,7 +23,7 @@ const LinkItem = props => (
 
 const Footer = ({ siteTitle }) => (
 <footer className={footer}>
-    Made with 💗 in Vancouver by <a href="https://github.com/kwaimind" target="_blank">Daniel Reed</a>
+    Made with 💗 in Vancouver by <a href="https://github.com/kwaimind" target="_blank">Daniel Reed</a> & <a href="https://github.com/SergioJrDev" target="_blank">Sérgio Junior</a>
 </footer>
 )
 
