@@ -7,6 +7,9 @@ Built on react, gatsby, emotion, and react-leaflet. Hosting with surge. Pulling 
 [View the demo](https://feeble-eggnog.surge.sh/)
 
 The suggestion form is unoptimized and more of a placeholder.
+## Adding new places to map.
+To add new places to the map, one can head over to the src/components/leaflets.js and add your place to markers data set.
+One needs to follow the manner other places are being added, only other information one needs is to search for latitude and longitude of the place, which can be retrieved by simple online search.
 
 ## todo
 
