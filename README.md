@@ -19,7 +19,3 @@ The suggestion form is unoptimized and more of a placeholder.
 * [x] Pull more location data from the Foursquare API
 * [x] CSS Sticky Footer
 * [ ] Pull 1 header image for each card
-
-## build
-
-`gatsby build && surge public/ --domain https://feeble-eggnog.surge.sh/`

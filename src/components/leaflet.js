@@ -4,8 +4,8 @@ import axios from 'axios'
 import '../css/leaflet.css'
 
 //Foursquare API
-const clientId = `${process.env.CLIENT_ID}`
-const clientSecret = `${process.env.CLIENT_SECRET}`
+const clientId = 'XAI5LRSSLR0RD1I4GKRBX0QAE1E110A2LAXSOAJEHFBIJUC4'
+const clientSecret = 'ZMGI0XZCRY5NVBISSZNNSSQ2VRSPNHFDCYNFKHKNGWHNUCGL'
 const apiEndPoint = 'https://api.foursquare.com/v2/venues/'
 
 const markers = [
